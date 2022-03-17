@@ -1101,16 +1101,16 @@ function file_audio(path) {
   ` + plyrUI + `
   <br>
   <!-- 固定标签 -->
-  <div class="mdui-textfield">
+  <!--<div class="mdui-textfield">
     <label class="mdui-textfield-label">下载地址</label>
     <input class="mdui-textfield-input" type="text" value="${url}"/>
   </div>
   <div class="mdui-textfield">
     <label class="mdui-textfield-label">HTML 引用地址</label>
     <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
-  </div>
+  </div>-->
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+<!--<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>-->
   `;
     $('#content').html(content);
 
