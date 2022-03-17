@@ -849,10 +849,10 @@ function file_video(path) {
     player_items += `<li class="mdui-divider"></li>
                    <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">复制链接</a></li>`;
     const playBtn = `
-      <!--<button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
+      <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
         <i class="mdui-icon material-icons">&#xe039;</i>外部播放器播放<i class="mdui-icon material-icons">&#xe5cf;</i>
       </button>
-      <ul class="mdui-menu" id="player-items">${player_items}</ul>-->`;
+      <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
 
     var playerUI;
     var playerType;
@@ -911,8 +911,8 @@ function file_video(path) {
     var content = `
 <div class="mdui-container-fluid">
   <br>
-<!--  ${playerUI}
-  <br>${playBtn}
+  ${playerUI}
+  <br>
   <!-- 固定标签 -->
   <div class="mdui-textfield">
     <label class="mdui-textfield-label">下载地址</label>
@@ -923,7 +923,7 @@ function file_video(path) {
     <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
   </div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>-->
+<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
   `;
     $('#content').html(content);
     $('#copy-link').on('click', () => {
